@@ -1,0 +1,12 @@
+[Unit]
+Description=dbai-pointing-filtering&hosting
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/lnxpoint -g 192.168.0.100 --ap wlP2p33s0 POS_Server -p asdffdsa
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
